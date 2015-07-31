@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_75">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/aspectjweaver-1.8.6.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/freemarker.jar" sourcepath="D:/WEB_WORKS/jar_resource/freemarker-2.3.23-sources.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/mybatis-3.3.0.jar" sourcepath="D:/WEB_WORKS/jar_resource/mybatis-3.3.0-sources.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/mybatis-spring-1.2.3.jar" sourcepath="D:/WEB_WORKS/jar_resource/mybatis-spring-1.2.3-sources.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-aop-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-beans-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-context-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-context-support-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-core-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-expression-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-jdbc-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-orm-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-tx-4.1.6.RELEASE.jar" sourcepath="D:/WEB_WORKS/jar_resource/spring-tx-4.1.6.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-web-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/asm-4.2.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/cglib-3.1.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/log4j-api-2.2.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/log4j-core-2.2.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/jackson-core-2.6.0.jar" sourcepath="D:/WEB_WORKS/jar_resource/jackson-core-2.6.0-sources.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/jackson-databind-2.6.0.jar" sourcepath="D:/WEB_WORKS/jar_resource/jackson-databind-2.6.0-sources.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/jackson-annotations-2.6.0.jar" sourcepath="D:/WEB_WORKS/jar_resource/jackson-annotations-2.6.0-sources.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="output" path="web/WEB-INF/classes"/>
+</classpath>
