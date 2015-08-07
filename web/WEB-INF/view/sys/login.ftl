@@ -3,7 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>用戶登錄</title>
-<#include "/WEB-INF/view/linkScript.ftl"/>
+<link rel="stylesheet" type="text/css" href="${path}/ui/jquery-easyui-1.4.3/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="${path}/ui/jquery-easyui-1.4.3/themes/icon.css">
+<script type="text/javascript" src="${path}/ui/jquery-easyui-1.4.3/jquery.min.js"></script>
+<script type="text/javascript" src="${path}/ui/jquery-easyui-1.4.3/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="${path}/ui/jquery-easyui-1.4.3/locale/easyui-lang-zh_TW.js"></script>
+<script type="text/javascript" src="${path}/ui/js/md5.js"></script>
 
 <script type="text/javascript">
 	$(function() {

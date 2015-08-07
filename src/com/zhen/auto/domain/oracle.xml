@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace = "oracle">
+
+	<select id="getTables" resultType="com.zhen.auto.domain.Table" parameterType="java.lang.String">
+		<![CDATA[
+            select
+                a.table_name as name,
+                b.comments as annotation
+            from user_tables a, user_tab_comments b
+            where a.table_name = b.table_name and rownum <= 50]]>
+            <if test="dept_code!=null and dept_code!=''">
+            	<![CDATA[ and a.table_name like '%'||#{dept_code,jdbcType=VARCHAR}||'%' ]]>
+            </if>
+	</select>
+	
+	<select id="getColumns" resultType="com.zhen.auto.domain.Column" parameterType="java.lang.String">
+		<![CDATA[
+            select
+                a.column_name as name,
+                a.data_type as jdbcType,
+                decode(a.char_length,0,nvl(a.data_precision,a.data_length), a.char_length) as length,
+                a.data_scale as scale,
+                a.nullable as nullAble,
+                b.comments as annotation,
+                (case when exists(select 1 from user_cons_columns c
+                             inner join user_constraints d on c.constraint_name = d.constraint_name
+                             where d.constraint_type='P' and d.table_name = #{table_name,jdbcType=VARCHAR}
+                             and c.column_name = a.column_name) then 'Y' else 'N' end) as pk
+            from user_tab_columns a
+            inner join user_col_comments b on a.column_name = b.column_name
+            where a.table_name = #table_name:VARCHAR# and b.table_name=#{table_name,jdbcType=VARCHAR}
+            order by a.column_id
+        ]]>
+	</select>
+</mapper>

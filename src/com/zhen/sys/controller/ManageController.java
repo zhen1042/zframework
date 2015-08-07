@@ -20,6 +20,12 @@ public class ManageController extends BaseController {
 	@ActionAnnotation(name = "系統登錄驗證", check = NO)
 	public ModelAndView login(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
+		if (request.getMethod().equalsIgnoreCase("GET")) {
+			
+		} else {
+			
+		}
+		
 		return getView(request);
 	}
 }
